@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vl-quality-monitor"
+version = "0.1.0"
+description = "Synthetic vehicle-location quality monitoring pipeline"
+requires-python = ">=3.10"
+dependencies = ["duckdb>=1.0"]
+
+[project.optional-dependencies]
+dashboard = ["streamlit>=1.32", "plotly>=5.20", "pandas>=2.0"]
+
+[project.scripts]
+vl-quality = "vl_quality.main:main"
+
+[tool.setuptools]
+packages = ["vl_quality"]
+package-dir = {vl_quality = "src"}

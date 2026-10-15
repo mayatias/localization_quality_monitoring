@@ -1,0 +1,1 @@
+{"sampling_rate_hz": 16, "max_speed_mps": 80.0, "max_speed_change_mps": 20.0, "timestamp_tolerance_s": 0.005, "position_window_frames": 3}

@@ -1,0 +1,11 @@
+__pycache__/
+.venv/
+work_plan.md
+vl_quality_monitor.egg-info/
+data/
+
+data/raw/*.json
+data/ground_truth/*.json
+data/processed/*
+*.db
+*.duckdb
